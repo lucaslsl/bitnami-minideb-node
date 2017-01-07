@@ -48,6 +48,6 @@ WORKDIR /usr/src/app
 
 RUN cd /usr/src/app && npm install
 
-RUN apt-get remove -y build-essential 
+# RUN apt-get remove -y build-essential 
 
 CMD [ "node" ]
