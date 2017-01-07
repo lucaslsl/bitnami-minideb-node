@@ -40,14 +40,4 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt \
   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
-RUN mkdir -p /usr/src/app
-
-COPY . /usr/src/app
-
-WORKDIR /usr/src/app
-
-RUN cd /usr/src/app && npm install
-
-# RUN apt-get remove -y build-essential 
-
 CMD [ "node" ]
