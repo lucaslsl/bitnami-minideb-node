@@ -9,6 +9,4 @@ RUN apt-get update && apt-get install -y \
   libpng-dev \
   libpango1.0-dev \
   libgif-dev \
-  libpq-dev \
-
-
+  libpq-dev 
